@@ -6,31 +6,31 @@ body {
   background-color: rgb(233, 221, 221);
 }
 
-h1 {
+.main__title {
   color: red;
 }
 
-p {
+.main__paragraph {
   color: green;
 }
 
-a {
+.main__hyperlink {
   color: blue;
 }
 
-h1,
-p,
-a {
+.main__title,
+.main__paragraph,
+.main__hyperlink {
   font-family: Arial, Helvetica, sans-serif;
   padding: 0 0 0 10px;
 }
 
-p,
-a {
+.main__paragraph,
+.main__hyperlink {
   font-size: 1em;
 }
 
-a:hover {
+.main__hyperlink:hover {
   color: rgb(87, 87, 225);
   font-size: 1.2em;
   text-transform: uppercase;
