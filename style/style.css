@@ -1,9 +1,9 @@
 /*************************************        *************************************/
 html,
 body {
-  padding: 0;
+  width: 100%;
   margin: 0;
-  background-color: rgb(233, 221, 221);
+  padding: 0;
 }
 
 .main__title {
