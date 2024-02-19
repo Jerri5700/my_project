@@ -6,16 +6,17 @@ body {
   margin: 0;
   padding: 0;
 }
-/*дефолтные стили*/
+/*Дефолтные стили*/
 
 /*Стили тело сайта body*/
 .body {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  /* width: 1920px; */
   min-height: 100vh;
   padding-top: 147px;
-  display: flex;
+
   align-items: center;
   background-color: rgba(222, 222, 222, 0.5);
   backdrop-filter: blur(20px);
@@ -81,6 +82,7 @@ body {
 }
 /*Стили для логотипа*/
 
+/*Стили для нафигационного меню*/
 .page-header__nav {
   display: flex;
   align-items: baseline;
@@ -100,6 +102,40 @@ body {
 .page-header__nav-link:hover {
   color: #bc3324;
 }
+/*Стили для нафигационного меню*/
+
+/*Стили, кнопка войти*/
+.btn {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 15px 40px;
+  border: 1px solid #1f1e1e;
+  background-color: transparent;
+  outline: none;
+  color: #1f1e1e;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #1f1e1e;
+  color: #fff;
+}
+
+.page-header__right-block {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 202px;
+}
+/*Стили, кнопка войти*/
 
 /*Стили main*/
 .main {
