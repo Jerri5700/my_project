@@ -178,7 +178,7 @@ body {
 
 .listing__events-list {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin: 0 -30px -120px;
 }
 
