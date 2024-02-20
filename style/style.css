@@ -274,3 +274,42 @@ body {
   background-color: gray;
 }
 /*Стили footer*/
+
+/*****************************************************************************/
+
+.event {
+  padding: 40px 0 150px;
+}
+
+.reserve {
+  display: grid;
+  gap: 65px 11%;
+  grid-template-columns: 405px calc(100% - 405px);
+  grid-template-areas:
+    "checks scheme"
+    "order legend";
+  width: 100%;
+}
+
+.reserve__checks {
+  grid-area: checks;
+}
+
+.reserve__order {
+  grid-area: order;
+}
+
+.reserve__scheme {
+  grid-area: scheme;
+}
+
+.reserve__scheme {
+  grid-area: scheme;
+}
+
+.reserve > div {
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: coral;
+  text-align: center;
+}
