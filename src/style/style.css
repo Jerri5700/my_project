@@ -16,7 +16,6 @@ body {
   /* width: 1920px; */
   min-height: 100vh;
   padding-top: 147px;
-
   align-items: center;
   background-color: rgba(222, 222, 222, 0.5);
   backdrop-filter: blur(20px);
@@ -57,6 +56,7 @@ body {
 /*Стили контейнера шапки сайта*/
 .page-header__container {
   box-sizing: border-box;
+  /* position: relative; */
   display: flex;
   align-items: center;
   width: 100%;
