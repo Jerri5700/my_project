@@ -29,7 +29,7 @@ body {
 }
 /*Стили тело сайта body*/
 
-/*Стили шапка сайта*/
+/*Стили блока шапки*/
 .page-header {
   position: fixed;
   top: 0;
@@ -42,7 +42,7 @@ body {
   backdrop-filter: blur(20px);
   z-index: 100;
 }
-/*Стили шапка сайта*/
+/*Стили блока шапки*/
 
 /*Исправление backdrop-filter: blur(20px)*/
 @supports (backdrop-filter: blur(20px)) {
@@ -53,7 +53,7 @@ body {
 }
 /*Исправление backdrop-filter: blur(20px)*/
 
-/*Стили контейнера шапки сайта*/
+/*Стили контейнера шапки*/
 .page-header__container {
   box-sizing: border-box;
   /* position: relative; */
@@ -65,7 +65,7 @@ body {
   padding-left: 40px;
   padding-right: 40px;
 }
-/*Стили контейнера шапки сайта*/
+/*Стили контейнера шапки*/
 
 /*Стили для логотипа*/
 .page-header__logo {
@@ -82,7 +82,7 @@ body {
 }
 /*Стили для логотипа*/
 
-/*Стили для нафигационного меню*/
+/*Стили нафигационного меню*/
 .page-header__nav {
   display: flex;
   align-items: baseline;
@@ -102,7 +102,7 @@ body {
 .page-header__nav-link:hover {
   color: #bc3324;
 }
-/*Стили для нафигационного меню*/
+/*Стили нафигационного меню*/
 
 /*Стили, кнопка войти*/
 .btn {

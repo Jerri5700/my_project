@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/style/style.css" />
+    <link rel="stylesheet" href="/src/styles/styles.css" />
     <title>Lenni Art</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,11 +16,9 @@
     <header class="page-header">
       <div class="page-header__container">
         <a href="index.html" class="page-header__logo">
-          <img
-            src="/src/assets/svg-sprite/logo.svg"
-            alt="logo"
-            class="page-header__logo-icon"
-          />
+          <svg class="page-header__logo-icon" width="202" height="147">
+            <use xlink:href="assets/icons/symbols.svg#logo"></use>
+          </svg>
         </a>
         <nav class="page-header__nav">
           <a href="events.html" class="page-header__nav-link">Мероприятия</a>
