@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/styles/styles.css" />
+    <link rel="stylesheet" href="/src/styles/styles.less" />
     <title>Lenni Art</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,17 +13,33 @@
       rel="stylesheet"
     />
   </head>
-  <body class="body">
+  <!DOCTYPE html>
+  <html lang="ru">
+    @@include('blocks/head.html')
+    <body class="body">
+      @@include('blocks/page-header.html')
+      <main class="main">
+        <div class="home">
+          <!-- прочая разметка -->
+          <!-- prettier-ignore -->
+          @@include('blocks/blog-listing.html', {"class": "home__listing"})
+          <!-- прочая разметка -->
+        </div>
+      </main>
+      @@include('blocks/page-footer.html')
+    </body>
+  </html>
+  <!-- <body class="body">
     @@include('blocks/page-header.html')
     <header class="page-header">
       <div class="page-header__container">
-        <!-- <a href="index.html" class="page-header__logo">
+        <a href="index.html" class="page-header__logo">
           <img
             src="/src/assets/svg-sprite/logo.svg"
             alt="logo"
             class="page-header__logo-icon"
           />
-        </a> -->
+        </a>
         <a href="index.html" class="page-header__logo">
           <svg class="page-header__logo-icon" width="202" height="147">
             <use xlink:href="assets/icons/symbols.svg#logo"></use>
@@ -42,15 +58,15 @@
     </header>
     <main class="main">
       <div class="home">
-        <!-- прочая разметка -->
+        
 
-        <!-- prettier-ignore -->
+        
         @@include('blocks/blog-listing.html', {"class": "home__listing"})
 
-        <!-- прочая разметка -->
+        
       </div>
     </main>
     <footer class="page-footer">FOOTER</footer>
     @@include('blocks/page-footer.html')
-  </body>
+  </body> -->
 </html>
