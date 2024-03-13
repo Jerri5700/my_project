@@ -33,7 +33,7 @@ body {
   background-position: 0 0, 0 0;
   background-size: auto, 100% auto;
   background-repeat: repeat, repeat-y;
-  color: #1f1e1e;
+  color: #1f1t1t;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -53,7 +53,7 @@ body {
           flex: 0 0 auto;
 }
 a {
-  color: #1f1e1e;
+  color: #1f1t1t;
   outline: none;
 }
 img {
@@ -229,6 +229,7 @@ img {
 }
 /*Стили блока шапки начало*/
 .page-header {
+  /* Стили блока шапки */
   position: fixed;
   top: 0;
   left: 0;
@@ -245,6 +246,37 @@ img {
           backdrop-filter: blur(20px);
   z-index: 100;
 }
+.page-header__container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 1414px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.page-header__nav-link {
+  /* Стили ссылок навигации */
+  margin: 0 25px;
+  color: #1f1e1e;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+}
+.page-header__nav-link:hover {
+  /* Стили ссылок по наведению мыши */
+  color: #bc3324;
+}
 /*Стили блока шапки конец*/
 /*---------------------------------------------------РАЗДЕЛИТЕЛЬНАЯ ЧЕРТА---------------------------------------------------*/
 /*Исправление backdrop-filter: blur(20px)*/
@@ -256,25 +288,6 @@ img {
   }
 }
 /*Исправление backdrop-filter: blur(20px)*/
-/*---------------------------------------------------РАЗДЕЛИТЕЛЬНАЯ ЧЕРТА---------------------------------------------------*/
-/*Стили контейнера шапки начало*/
-.page-header__container {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  /* position: relative; */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  max-width: 1414px;
-  margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-/*Стили контейнера шапки конец*/
 /*---------------------------------------------------РАЗДЕЛИТЕЛЬНАЯ ЧЕРТА---------------------------------------------------*/
 /*Стили для логотипа начало*/
 .page-header__logo {
@@ -300,19 +313,6 @@ img {
       -ms-flex-align: baseline;
           align-items: baseline;
   margin: 0 auto;
-}
-.page-header__nav-link {
-  margin: 0 25px;
-  color: #1f1e1e;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 25px;
-  text-decoration: none;
-  -webkit-transition: color 0.2s;
-  transition: color 0.2s;
-}
-.page-header__nav-link:hover {
-  color: #bc3324;
 }
 /*Стили нафигационного меню конец*/
 /*---------------------------------------------------РАЗДЕЛИТЕЛЬНАЯ ЧЕРТА---------------------------------------------------*/
@@ -365,3 +365,9 @@ img {
 }
 /*Стили footer конец*/
 /*---------------------------------------------------РАЗДЕЛИТЕЛЬНАЯ ЧЕРТА---------------------------------------------------*/
+.display-none {
+  display: none;
+}
+.color-red {
+  color: #bc3324;
+}

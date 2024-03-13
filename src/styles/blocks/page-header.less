@@ -1,5 +1,6 @@
 /*Стили блока шапки начало*/
 .page-header {
+  /* Стили блока шапки */
   position: fixed;
   top: 0;
   left: 0;
@@ -10,6 +11,31 @@
   background-color: rgba(222, 222, 222, 0.5);
   backdrop-filter: blur(20px);
   z-index: 100;
+
+  // Стили контейнера шапки
+  &__container {
+    // Стили подключены через миксин
+    .container();
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav-link {
+    /* Стили ссылок навигации */
+    margin: 0 25px;
+    color: #1f1e1e;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover {
+      /* Стили ссылок по наведению мыши */
+      color: #bc3324;
+    }
+  }
 }
 /*Стили блока шапки конец*/
 
@@ -23,22 +49,6 @@
   }
 }
 /*Исправление backdrop-filter: blur(20px)*/
-
-/*---------------------------------------------------РАЗДЕЛИТЕЛЬНАЯ ЧЕРТА---------------------------------------------------*/
-
-/*Стили контейнера шапки начало*/
-.page-header__container {
-  box-sizing: border-box;
-  /* position: relative; */
-  display: flex;
-  align-items: center;
-  width: 100%;
-  max-width: 1414px;
-  margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-/*Стили контейнера шапки конец*/
 
 /*---------------------------------------------------РАЗДЕЛИТЕЛЬНАЯ ЧЕРТА---------------------------------------------------*/
 
@@ -64,20 +74,6 @@
   display: flex;
   align-items: baseline;
   margin: 0 auto;
-}
-
-.page-header__nav-link {
-  margin: 0 25px;
-  color: #1f1e1e;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 25px;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-
-.page-header__nav-link:hover {
-  color: #bc3324;
 }
 /*Стили нафигационного меню конец*/
 
