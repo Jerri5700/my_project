@@ -6,8 +6,14 @@
     @@include('blocks/page-header.html')
 
     <main class="main">
-      MAIN
-      <!-- содержимое страницы -->
+      <div class="home">
+        <!-- прочая разметка -->
+        <!-- prettier-ignore -->
+        <!-- @@include('blocks/blog-listing.html', {"class": "home__listing"}) -->
+
+        <!-- прочая разметка -->
+        @@include('blocks/blog-listing.html')
+      </div>
     </main>
 
     @@include('blocks/page-footer.html')
