@@ -1,9 +1,15 @@
-<div class="events">
-  <section class="listing events__listing">
-    <h2 class="listing__title section-title">Мероприятия</h2>
-    <div class="listing__events-list">
-      <!-- prettier-ignore -->
-      @@loop('blocks/event-card.html', [
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('blocks/head.html')
+  <body class="body">
+    @@include('blocks/page-header.html')
+    <main class="main">
+      <div class="events">
+        <section class="listing events__listing">
+          <h2 class="listing__title section-title">Мероприятия</h2>
+          <div class="listing__events-list">
+            <!-- prettier-ignore -->
+            @@loop('blocks/event-card.html', [
               {
                 "class": "listing__event-card",
                 "img": "assets/images/events/nirvana.jpg",
@@ -59,18 +65,22 @@
                 "datetime": "2022-12-27T10:00"
               }        
             ])
-    </div>
-    <!-- Кнопка "Показать все" -->
-    <a
-      href="#"
-      style="
-        text-align: center;
-        color: #000;
-        font-size: 1.2em;
-        padding-top: 20px;
-      "
-      >Показать еще</a
-    >
-  </section>
-  <!-- Остальная разметка -->
-</div>
+          </div>
+          <!-- Кнопка "Показать все" -->
+          <a
+            href="#"
+            style="
+              text-align: center;
+              color: #000;
+              font-size: 1.2em;
+              padding-top: 20px;
+            "
+            >Показать еще</a
+          >
+        </section>
+        <!-- Остальная разметка -->
+      </div>
+    </main>
+    @@include('blocks/page-footer.html')
+  </body>
+</html>
