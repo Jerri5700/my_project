@@ -291,7 +291,7 @@ img {
   width: 100%;
   max-width: 1254px;
   height: 1px;
-  background-color: #1f1e1e;
+  background-color: #000000;
   pointer-events: none;
 }
 .article-card__time {
