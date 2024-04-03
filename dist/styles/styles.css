@@ -863,8 +863,66 @@ textarea:focus::placeholder {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 10px;
-  background-color: coral;
+  border: 1px solid coral;
   text-align: center;
+}
+.check--red {
+  color: #bc3324;
+}
+.check--red .check__mark {
+  border-color: #bc3324;
+}
+.check--red .check__input:checked ~ .check__mark {
+  background-color: #bc3324;
+}
+.check--disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+.reserve__scheme-wrapper {
+  position: relative;
+  width: 100%;
+  border: 3px solid red;
+}
+.reserve__scheme-wrapper::after {
+  content: "";
+  display: block;
+  width: 100%;
+}
+.reserve__scene {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.reserve__tickets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.reserve__qty::after {
+  content: " " attr(data-caption) " | " attr(data-price);
+}
+.reserve__sum::after {
+  content: attr(data-currency);
+  margin-left: 4px;
+  font-size: 0.95em;
+}
+.reserve__total::before {
+  content: attr(data-caption);
+  margin-right: 30px;
+}
+.reserve__total::after {
+  content: attr(data-currency);
+  margin-left: 4px;
+  font-size: 0.95em;
 }
 /*Стили блока шапки начало*/
 .page-header {
