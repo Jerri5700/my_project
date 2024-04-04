@@ -41,6 +41,7 @@
     <article class="event">
       <!-- Здесь пропущенное содержимое страницы -->
       <form action="" class="reserve event__reserve">
+        <!------------------------ Пронирование столов ------------------------>
         <div class="reserve__checks">
           <h4 class="reserve__section-title">Забронировать столик</h4>
           <label class="reserve__check check check--red">
@@ -53,13 +54,53 @@
             <span class="check__mark"></span>
             <span class="check__label">2 стол</span>
           </label>
-          <!-- Еще чекбоксы -->
+          <label class="reserve__check check">
+            <input type="checkbox" name="table_3" class="check__input" />
+            <span class="check__mark"></span>
+            <span class="check__label">3 стол</span>
+          </label>
+          <label class="reserve__check check check--red">
+            <input type="checkbox" name="table_4" class="check__input" />
+            <span class="check__mark"></span>
+            <span class="check__label">4 стол</span>
+          </label>
           <label class="reserve__check check check--disabled">
             <input type="checkbox" name="table_5" class="check__input" disabled />
             <span class="check__mark"></span>
             <span class="check__label">5 стол </span>
           </label>
+          <label class="reserve__check check">
+            <input type="checkbox" name="table_6" class="check__input" />
+            <span class="check__mark"></span>
+            <span class="check__label">6 стол</span>
+          </label>
+          <label class="reserve__check check check--red">
+            <input type="checkbox" name="table_7" class="check__input" />
+            <span class="check__mark"></span>
+            <span class="check__label">7 стол</span>
+          </label>
+          <label class="reserve__check check check--red">
+            <input type="checkbox" name="table_8" class="check__input" />
+            <span class="check__mark"></span>
+            <span class="check__label">8 стол</span>
+          </label>
+          <label class="reserve__check check check--red">
+            <input type="checkbox" name="table_9" class="check__input" />
+            <span class="check__mark"></span>
+            <span class="check__label">9 стол</span>
+          </label>
+          <label class="reserve__check check">
+            <input type="checkbox" name="table_10" class="check__input" />
+            <span class="check__mark"></span>
+            <span class="check__label">10 стол</span>
+          </label>
+          <label class="reserve__check check">
+            <input type="checkbox" name="table_11" class="check__input" />
+            <span class="check__mark"></span>
+            <span class="check__label">11 стол</span>
+          </label>
         </div>
+        <!------------------------------- Раздел сцена ------------------------------->
         <div class="reserve__scheme">
           <div class="reserve__scheme-container">
             <h4 class="reserve__scheme-title">Сцена</h4>
@@ -71,6 +112,7 @@
             </div>
           </div>
         </div>
+        <!------------------------ Пригласительные билеты ------------------------>
         <div class="reserve__order">
           <h4 class="reserve__section-title">Ваши пригласительные билеты</h4>
           <div class="reserve__tickets-list">
@@ -94,7 +136,21 @@
             Купить билеты
           </button>
         </div>
-        <div class="reserve__legend">Легенда</div>
+        <!------------------------ Стоимость пригласительного билета ------------------------>
+        <div class="reserve__legend">
+          <h4 class="reserve__section-title">
+            Стоимость пригласительного билета
+          </h4>
+
+          <div class="reserve__tickets-list">
+            <div class="reserve__tickets">
+              <div class="reserve__qty" data-caption="" data-price="1 персона">
+                1400 ₽
+              </div>
+            </div>
+
+            <h4 class="reserve__section-title">Примечание</h4>
+          </div>
       </form>
     </article>
   </main>

@@ -549,6 +549,9 @@ textarea:focus::placeholder {
   }
 }
 /*Исправление backdrop-filter: blur(50px)*/
+.btn {
+  background-color: aquamarine;
+}
 .link {
   text-align: right;
   color: #000;
@@ -923,6 +926,13 @@ textarea:focus::placeholder {
   content: attr(data-currency);
   margin-left: 4px;
   font-size: 0.95em;
+}
+.reserve .btn--red {
+  margin-top: 53px;
+  width: 380px;
+  background: #bc3324;
+  border: none;
+  color: #ffffff;
 }
 /*Стили блока шапки начало*/
 .page-header {
