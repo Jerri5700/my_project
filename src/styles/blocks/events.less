@@ -1,0 +1,302 @@
+.event__table_services {
+  padding: 0 285px;
+  p {
+    width: 868px;
+    text-align: left;
+  }
+}
+
+// Стрелка показать еще страница мероприятия
+.listing__link-arrow-icon {
+  margin-top: 20px;
+  transform: rotate(90deg);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #1f1e1e;
+  text-align: center;
+  &__tr {
+    &:nth-child(2n-1) {
+      background-color: fade(#1f1e1e, 3%);
+    }
+  }
+  &__th {
+    height: 85px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+  }
+  &__footer-th {
+    height: 60px;
+    font-size: 0;
+  }
+  &__th,
+  &__footer-th {
+    box-sizing: border-box;
+    padding: 10px;
+    border-right: 1px solid #bfbfbf;
+    text-transform: uppercase;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      border-right: none;
+      padding-right: 0;
+    }
+  }
+  &__body-th {
+    box-sizing: border-box;
+    height: 50px;
+    padding: 10px 10px 10px 0;
+    border-top: 1px solid #bfbfbf;
+    border-bottom: 1px solid #bfbfbf;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: left;
+  }
+  &__td {
+    box-sizing: border-box;
+    height: 50px;
+    padding: 10px;
+    border: 1px solid #bfbfbf;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+
+    &:last-child {
+      border-right: none;
+      padding-right: 0;
+    }
+  }
+}
+
+.ok {
+  display: block;
+  position: relative;
+  width: 26px;
+  height: 26px;
+  margin: auto;
+  border-radius: 50%;
+  background-color: #1f1e1e;
+  &::after {
+    content: "";
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    top: 4px;
+    left: 9px;
+    width: 8px;
+    height: 14px;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    transform: rotate(45deg);
+  }
+}
+// Разделительная черта --------------------------
+.content {
+  color: @black;
+  font-family: @font1;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.375;
+  word-wrap: break-word;
+  h1,
+  h2,
+  h4,
+  h4,
+  h5,
+  h6 {
+    margin: 1.3em 0 0.8em;
+    font-family: @font1;
+    color: @black;
+    font-weight: 600;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 28px;
+  }
+  h4 {
+    font-size: 24px;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+  h6 {
+    font-size: 16px;
+  }
+  ol,
+  ul,
+  p {
+    margin: 20px 0;
+    font-family: @font1;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  ul,
+  ol {
+    position: relative;
+    padding: 0;
+    list-style: none;
+    font-family: @font1;
+  }
+  ul > li {
+    box-sizing: border-box;
+    position: relative;
+    padding-left: 20px;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: @red;
+      pointer-events: none;
+    }
+  }
+  ol {
+    counter-reset: li;
+    padding: 0;
+  }
+  ol > li {
+    counter-increment: li;
+    &::before {
+      content: counter(li) + ". ";
+      box-sizing: border-box;
+      display: inline-block;
+      min-width: 20px;
+      color: @red;
+      white-space: pre;
+    }
+  }
+  ul > li,
+  ol > li {
+    margin: 0 0 8px;
+    cursor: default;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  img,
+  iframe,
+  figure {
+    display: block;
+    max-width: 700px;
+  }
+  & > img,
+  & > iframe,
+  & > figure {
+    margin: 30px 0;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  iframe {
+    border: none;
+    outline: none;
+  }
+  figure {
+    img {
+      max-width: 100%;
+      margin: 0;
+    }
+  }
+  figcaption {
+    margin: 15px 0;
+    color: fade(@black, 60%);
+    font-weight: 500;
+    font-size: 13px;
+    text-align: left;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  img {
+    &[align],
+    &.alignright {
+      margin: 5px 0;
+      & + figcaption {
+        display: none;
+      }
+    }
+    &[align="right"],
+    &.alignright {
+      margin-left: 10px;
+    }
+    &.alignright {
+      float: right;
+    }
+    &[align="left"],
+    &.alignleft {
+      margin-right: 10px;
+    }
+    &.alignleft {
+      float: left;
+    }
+  }
+  a {
+    font-weight: 600;
+    color: @black;
+    text-decoration: underline;
+    transition: color 0.2s;
+    cursor: pointer;
+    &:hover {
+      color: @red;
+    }
+  }
+  blockquote {
+    position: relative;
+    margin: 30px 0;
+    padding: 0 0 0 20px;
+    color: fade(@black, 90%);
+    font-style: normal;
+    font-weight: 600;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background-color: @red;
+    }
+  }
+  b {
+    font-weight: 700;
+  }
+}
