@@ -549,9 +549,6 @@ textarea:focus::placeholder {
   }
 }
 /*Исправление backdrop-filter: blur(50px)*/
-.btn {
-  background-color: aquamarine;
-}
 .link {
   text-align: right;
   color: #000;
