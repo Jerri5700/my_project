@@ -46,6 +46,7 @@ img {
   object-fit: cover;
 }
 /*---------------------------------------------------РАЗДЕЛИТЕЛЬНАЯ ЧЕРТА---------------------------------------------------*/
+// Стили для формы
 input,
 textarea,
 button,
@@ -137,7 +138,7 @@ textarea:focus {
 
   &__input {
     .is-hidden;
-
+    //.is-hideen() миксин доделать 14.04.2024г
     &:checked {
       & ~ .check__mark {
         background-color: @black;
@@ -236,6 +237,7 @@ textarea:focus {
 .field {
   display: flex;
   flex-direction: column;
+  // border: 1px solid red;
 
   &__title {
     display: block;
