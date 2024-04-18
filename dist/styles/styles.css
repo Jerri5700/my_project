@@ -1309,6 +1309,9 @@ textarea:focus::placeholder {
   background-color: rgba(222, 222, 222, 0.5);
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   z-index: 100;
 }
 .page-header__container {
@@ -1431,6 +1434,12 @@ textarea:focus::placeholder {
 }
 /*Стили footer конец*/
 /*---------------------------------------------------РАЗДЕЛИТЕЛЬНАЯ ЧЕРТА---------------------------------------------------*/
+.width_624 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  max-width: 624px;
+}
 .display-none {
   display: none;
 }
@@ -1459,4 +1468,32 @@ textarea:focus::placeholder {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media (max-width: 1659px) {
+  .width_624 {
+    max-width: 604px;
+  }
+}
+@media (max-width: 1339px) {
+  .article__container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .page-header__container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .width_624 {
+    max-width: 566px;
+  }
+}
+@media (max-width: 767px) {
+  .article__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .page-header__container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
