@@ -19,6 +19,25 @@
   line-height: 1.277;
   text-align: center;
   text-transform: uppercase;
+  //прочие десктоп-стили
+  @media @bw1660 {
+    margin-bottom: 130px;
+  }
+  @media @bw1340 {
+    min-height: 52px;
+    margin-bottom: 100px;
+    padding: 11px 40px;
+    font-size: 24px;
+  }
+  @media @bw768 {
+    min-height: 42px;
+    margin-bottom: 80px;
+    padding: 11px 20px;
+    font-size: 20px;
+  }
+  @media @bw600 {
+    font-size: 16px;
+  }
 }
 
 .listing {
@@ -30,25 +49,106 @@
   margin: 0 auto;
   padding-left: 40px;
   padding-right: 40px;
+
+  // .listing__events-list {
+  //   display: flex;
+  //   flex-wrap: wrap;
+  //   margin: 0 -30px -120px;
+
+  //   &__events-list {
+  //     //предыдущие стили
+  //     @media @bw1660 {
+  //       margin: 0 -20px -100px;
+  //     }
+  //     @media @bw1340 {
+  //       margin: 0 -15px -100px;
+  //     }
+  //     @media @bw1020 {
+  //       justify-content: center;
+  //       margin: 0 -15px -80px;
+  //     }
+  //     @media @bw768 {
+  //       margin: 0 -10px -80px;
+  //     }
+  //     @media @bw650 {
+  //       margin: 0 0 -60px;
+  //     }
+  //   }
+  // }
+
+  &__events-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -30px -120px;
+    //предыдущие стили
+    @media @bw1660 {
+      margin: 0 -20px -100px;
+    }
+    @media @bw1340 {
+      margin: 0 -15px -100px;
+    }
+    @media @bw1020 {
+      justify-content: center;
+      margin: 0 -15px -80px;
+    }
+    @media @bw768 {
+      margin: 0 -10px -80px;
+    }
+    @media @bw650 {
+      margin: 0 0 -60px;
+    }
+  }
+
+  &__event-card {
+    width: calc(33.3333% - 60px);
+    margin: 0 30px 120px;
+    //предыдущие стили
+    @media @bw1660 {
+      width: calc(33.3333% - 40px);
+      margin: 0 20px 100px;
+    }
+    @media @bw1340 {
+      width: calc(33.3333% - 30px);
+      margin: 0 15px 100px;
+    }
+    @media @bw1020 {
+      width: calc(50% - 30px);
+      max-width: 405px;
+      margin: 0 15px 80px;
+    }
+    @media @bw768 {
+      margin: 0 10px 80px;
+    }
+    @media @bw650 {
+      width: 100%;
+      margin: 0 0 60px;
+    }
+  }
 }
 
-.listing__events-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 -30px -120px;
-}
-
-.listing__event-card {
-  width: calc(33.3333% - 60px);
-  margin: 0 30px 120px;
-}
+// .listing__event-card {
+//   width: calc(33.3333% - 60px);
+//   margin: 0 30px 120px;
+// }
 .events {
   padding: 140px 0 100px;
+  //предыдущие стили
+  @media @bw1340 {
+    padding: 90px 0 100px;
+  }
+  @media @bw768 {
+    padding: 80px 0 100px;
+  }
+  &__listing {
+    margin-bottom: 100px;
+    //border: 1px solid red;
+  }
 }
 
-.events__listing {
-  margin-bottom: 100px;
-}
+// .events__listing {
+//   margin-bottom: 100px;
+//   //border: 2px solid red;
+// }
 /*Стили для листинга мероприятия КОНЕЦ*/
 
 /*Стили для main конец*/

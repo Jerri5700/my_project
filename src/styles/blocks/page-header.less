@@ -8,8 +8,8 @@
   height: 147px;
   display: flex;
   align-items: center;
-  // background-color: rgba(222, 222, 222, 0.5);
-  // backdrop-filter: blur(20px);
+  background-color: rgba(222, 222, 222, 0.5);
+  backdrop-filter: blur(20px);
   justify-content: space-between;
   z-index: 100;
 
@@ -50,6 +50,7 @@
     font-size: 0;
     text-decoration: none;
     z-index: 1;
+    //прочие стили
     @media @bw1660 {
       width: 152px;
       height: 111px;
@@ -68,6 +69,8 @@
     display: flex;
     align-items: baseline;
     margin: 0 auto;
+
+    //прочие стили
     @media @bw1020 {
       position: absolute;
       left: 0;
@@ -87,6 +90,7 @@
         backdrop-filter: blur(20px);
       }
     }
+    //прочие стили
     @media @bw768 {
       padding: 150px 20px 30px;
     }
@@ -106,6 +110,8 @@
     line-height: 25px;
     text-decoration: none;
     transition: color 0.2s;
+
+    //прочие стили
     @media @bw1020 {
       margin: 0 0 40px;
       font-size: 16px;
@@ -114,6 +120,8 @@
   }
   &__nav-user {
     display: none;
+
+    //прочие стили
     @media @bw1020 {
       display: flex;
       align-items: center;
@@ -138,6 +146,8 @@
     align-items: center;
     width: 202px;
     z-index: 1;
+
+    //прочие стили
     @media @bw1660 {
       width: 152px;
     }
@@ -163,6 +173,8 @@
     transition: color 0.2s, background-color 0.2s, border-color 0.2s;
     overflow: hidden;
     cursor: pointer;
+
+    //прочие стили
     @media @bw1020 {
       display: flex;
       width: 40px;
@@ -236,7 +248,7 @@
   }
 
   &__nav-link {
-    /* Стили ссылок навигации */
+    //стили ссылок для навигации
     margin: 0 25px;
     color: #1f1e1e;
     font-weight: 600;
@@ -246,9 +258,38 @@
     transition: color 0.2s;
 
     &:hover {
-      /* Стили ссылок по наведению мыши */
+      //стили ссылок по наведению мыши
       color: #bc3324;
     }
+  }
+  //стили для меню
+  &__nav {
+    display: flex;
+    align-items: baseline;
+    margin: 0 auto;
+    //border: 2px solid red;
+  }
+  //стили для логотипа
+  &__logo {
+    flex-shrink: 0;
+    width: 202px;
+    height: 147px;
+    font-size: 0;
+    text-decoration: none;
+    //border: 1px solid green;
+  }
+  &__logo-icon {
+    width: 100%;
+    height: 100%;
+    //border: 2px solid gray;
+  }
+
+  &__right-block {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 202px;
+    //border: 1px solid red;
   }
 }
 /*Стили блока шапки конец*/
@@ -267,41 +308,44 @@
 /*---------------------------------------------------РАЗДЕЛИТЕЛЬНАЯ ЧЕРТА---------------------------------------------------*/
 
 /*Стили для логотипа начало*/
-.page-header__logo {
-  flex-shrink: 0;
-  width: 202px;
-  height: 147px;
-  font-size: 0;
-  text-decoration: none;
-}
+// .page-header__logo {
+//   flex-shrink: 0;
+//   width: 202px;
+//   height: 147px;
+//   font-size: 0;
+//   text-decoration: none;
+//   border: 1px solid green;
+// }
 
-.page-header__logo-icon {
-  width: 100%;
-  height: 100%;
-}
+// .page-header__logo-icon {
+//   width: 100%;
+//   height: 100%;
+//   border: 2px solid gray;
+// }
 /*Стили для логотипа конец*/
 
 /*---------------------------------------------------РАЗДЕЛИТЕЛЬНАЯ ЧЕРТА---------------------------------------------------*/
 
 /*Стили нафигационного меню начало*/
-.page-header__nav {
-  display: flex;
-  align-items: baseline;
-  margin: 0 auto;
-}
+// .page-header__nav {
+//   display: flex;
+//   align-items: baseline;
+//   margin: 0 auto;
+//   border: 2px solid red;
+// }
 /*Стили нафигационного меню конец*/
 
 /*---------------------------------------------------РАЗДЕЛИТЕЛЬНАЯ ЧЕРТА---------------------------------------------------*/
 
-/*Стили, кнопка войти начало*/
+//стили кнопа войти
 .btn {
   display: inline-block;
   box-sizing: border-box;
   padding: 15px 40px;
-  border: 1px solid #1f1e1e;
+  border: 1px solid @black;
   background-color: transparent;
   outline: none;
-  color: #1f1e1e;
+  color: @black;
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -311,18 +355,25 @@
   transition: color 0.2s, background-color 0.2s, border-color 0.2s;
   overflow: hidden;
   cursor: pointer;
+
+  &:hover {
+    background-color: @black;
+    color: @white;
+  }
 }
 
-.btn:hover {
-  background-color: #1f1e1e;
-  color: #fff;
-}
+// .btn:hover {
+//   background-color: #1f1e1e;
+//   color: #fff;
+//   background-color: #bc3324;
+// }
 
-.page-header__right-block {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 202px;
-}
+// .page-header__right-block {
+//   display: flex;
+//   justify-content: flex-end;
+//   align-items: center;
+//   width: 202px;
+//   border: 1px solid red;
+// }
 /*Стили, кнопка войти конец*/
 /*---------------------------------------------------РАЗДЕЛИТЕЛЬНАЯ ЧЕРТА---------------------------------------------------*/

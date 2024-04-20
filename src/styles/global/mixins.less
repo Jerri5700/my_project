@@ -1,3 +1,4 @@
+//стиили для контейнера
 .container() {
   box-sizing: border-box;
   width: 100%;
@@ -7,10 +8,12 @@
   padding-left: 40px;
   padding-right: 40px;
 
+  //cтили для десктопа
   @media @bw1340 {
     padding-left: 30px;
     padding-right: 30px;
   }
+  //стили для планшета
   @media @bw768 {
     padding-left: 20px;
     padding-right: 20px;
@@ -51,6 +54,7 @@
   pointer-events: none !important;
 }
 
+//стили для скрытие попап
 .show-event-popup {
   body {
     overflow: hidden;

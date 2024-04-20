@@ -3,68 +3,157 @@
   width: 405px;
   max-width: 100%;
   min-width: 280px;
-}
 
-.event-card__link {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  color: #1f1e1e;
-  text-decoration: none;
-}
+  // .event-card__link {
+  //   display: flex;
+  //   flex-direction: column;
+  //   width: 100%;
+  //   color: #1f1e1e;
+  //   text-decoration: none;
+  // }
 
-.event-card__link:hover .event-card__title {
-  color: #bc3324;
-  text-decoration-color: #bc3324;
-}
+  &__link {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: #1f1e1e;
+    text-decoration: none;
 
-.event-card__picture {
-  display: block;
-  position: relative;
-  width: 100%;
-  margin: 0 0 25px;
-  font-size: 0;
-  text-decoration: none;
-  overflow: hidden;
-}
+    // .event-card__link:hover .event-card__title {
+    //   color: #bc3324;
+    //   text-decoration-color: #bc3324;
+    // }
 
-.event-card__picture::after {
-  content: "";
-  display: block;
-  width: 100%;
-  padding-top: 107.16%;
-}
+    &:hover {
+      .event-card__title {
+        color: @red;
+        text-decoration-color: @red;
+      }
+    }
+  }
 
-.event-card__img {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+  // .event-card__picture {
+  //   display: block;
+  //   position: relative;
+  //   width: 100%;
+  //   margin: 0 0 25px;
+  //   font-size: 0;
+  //   text-decoration: none;
+  //   overflow: hidden;
+  // }
+  &__picture {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin: 0 0 25px;
+    font-size: 0;
+    text-decoration: none;
+    overflow: hidden;
 
-.event-card__title {
-  margin: 0 0 15px;
-  min-height: 66px;
-  color: #1f1e1e;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 33px;
-  text-decoration: underline transparent;
-  transition: color 0.2s, text-decoration-color 0.2s;
-}
+    // .event-card__picture::after {
+    //   content: "";
+    //   display: block;
+    //   width: 100%;
+    //   padding-top: 107.16%;
+    // }
 
-.event-card__description {
-  margin: 0 0 auto;
-  font-size: 16px;
-  line-height: 22px;
-}
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      padding-top: 107.16%;
+    }
+  }
 
-.event-card__time {
-  margin: 15px 0 0;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 19px;
+  // .event-card__img {
+  //   display: block;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 100%;
+  //   height: 100%;
+  //   object-fit: cover;
+  // }
+
+  &__img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  // .event-card__title {
+  //   margin: 0 0 15px;
+  //   min-height: 66px;
+  //   color: #1f1e1e;
+  //   font-weight: 600;
+  //   font-size: 24px;
+  //   line-height: 33px;
+  //   text-decoration: underline transparent;
+  //   transition: color 0.2s, text-decoration-color 0.2s;
+
+  &__title {
+    margin: 0 0 15px;
+    min-height: 66px;
+    color: #1f1e1e;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    text-decoration: underline transparent;
+    transition: color 0.2s, text-decoration-color 0.2s;
+
+    //предыдущие стили
+    @media @bw1660 {
+      margin: 0 0 10px;
+    }
+    @media @bw1340 {
+      min-height: 54px;
+      font-size: 20px;
+      line-height: 27px;
+    }
+    @media @bw768 {
+      min-height: 44px;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+
+  // .event-card__description {
+  //   margin: 0 0 auto;
+  //   font-size: 16px;
+  //   line-height: 22px;
+  //   //предыдущие стили
+  //   @media @bw1020 {
+  //     font-size: 14px;
+  //     line-height: 19px;
+  //   }
+  // }
+
+  &__description {
+    margin: 0 0 auto;
+    font-size: 16px;
+    line-height: 22px;
+    //предыдущие стили
+    @media @bw1020 {
+      font-size: 14px;
+      line-height: 19px;
+    }
+  }
+
+  // .event-card__time {
+  //   margin: 15px 0 0;
+  //   font-weight: 300;
+  //   font-size: 14px;
+  //   line-height: 19px;
+  // }
+
+  &__time {
+    margin: 15px 0 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 19px;
+  }
 }

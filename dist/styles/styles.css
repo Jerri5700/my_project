@@ -111,29 +111,6 @@ input:focus::placeholder,
 textarea:focus::placeholder {
   color: transparent;
 }
-.btn {
-  display: inline-block;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 15px 40px;
-  border: 1px solid #1f1e1e;
-  background-color: transparent;
-  outline: none;
-  color: #1f1e1e;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-decoration: none;
-  -webkit-transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-  overflow: hidden;
-  cursor: pointer;
-}
-.btn:hover {
-  background-color: #1f1e1e;
-  color: #ffffff;
-}
 .x-btn {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -713,6 +690,7 @@ textarea:focus::placeholder {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  position: relative;
 }
 .article-card:hover .article-card__picture {
   -webkit-box-shadow: 0 0 30px rgba(31, 30, 30, 0.55);
@@ -816,9 +794,6 @@ textarea:focus::placeholder {
   color: inherit;
   -webkit-transition: none;
   transition: none;
-}
-.article-card {
-  position: relative;
 }
 .article-card + .article-card {
   margin-top: 120px;
@@ -1243,7 +1218,7 @@ textarea:focus::placeholder {
 .reserve__scheme-wrapper {
   position: relative;
   width: 100%;
-  border: 3px solid red;
+  border: 2px solid coral;
 }
 .reserve__scheme-wrapper::after {
   content: "";
@@ -1306,6 +1281,9 @@ textarea:focus::placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: rgba(222, 222, 222, 0.5);
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1486,7 +1464,6 @@ textarea:focus::placeholder {
           align-items: center;
 }
 .page-header__nav-link {
-  /* Стили ссылок навигации */
   margin: 0 25px;
   color: #1f1e1e;
   font-weight: 600;
@@ -1497,8 +1474,40 @@ textarea:focus::placeholder {
   transition: color 0.2s;
 }
 .page-header__nav-link:hover {
-  /* Стили ссылок по наведению мыши */
   color: #bc3324;
+}
+.page-header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin: 0 auto;
+}
+.page-header__logo {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 202px;
+  height: 147px;
+  font-size: 0;
+  text-decoration: none;
+}
+.page-header__logo-icon {
+  width: 100%;
+  height: 100%;
+}
+.page-header__right-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 202px;
 }
 /*Стили блока шапки конец*/
 /*---------------------------------------------------РАЗДЕЛИТЕЛЬНАЯ ЧЕРТА---------------------------------------------------*/
@@ -1513,33 +1522,11 @@ textarea:focus::placeholder {
 /*Исправление backdrop-filter: blur(20px)*/
 /*---------------------------------------------------РАЗДЕЛИТЕЛЬНАЯ ЧЕРТА---------------------------------------------------*/
 /*Стили для логотипа начало*/
-.page-header__logo {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  width: 202px;
-  height: 147px;
-  font-size: 0;
-  text-decoration: none;
-}
-.page-header__logo-icon {
-  width: 100%;
-  height: 100%;
-}
 /*Стили для логотипа конец*/
 /*---------------------------------------------------РАЗДЕЛИТЕЛЬНАЯ ЧЕРТА---------------------------------------------------*/
 /*Стили нафигационного меню начало*/
-.page-header__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  margin: 0 auto;
-}
 /*Стили нафигационного меню конец*/
 /*---------------------------------------------------РАЗДЕЛИТЕЛЬНАЯ ЧЕРТА---------------------------------------------------*/
-/*Стили, кнопка войти начало*/
 .btn {
   display: inline-block;
   -webkit-box-sizing: border-box;
@@ -1562,19 +1549,7 @@ textarea:focus::placeholder {
 }
 .btn:hover {
   background-color: #1f1e1e;
-  color: #fff;
-}
-.page-header__right-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 202px;
+  color: #ffffff;
 }
 /*Стили, кнопка войти конец*/
 /*---------------------------------------------------РАЗДЕЛИТЕЛЬНАЯ ЧЕРТА---------------------------------------------------*/
@@ -1627,6 +1602,19 @@ textarea:focus::placeholder {
   body {
     padding-top: 111px;
   }
+  .event-card__title {
+    margin: 0 0 10px;
+  }
+  .section-title {
+    margin-bottom: 130px;
+  }
+  .listing__events-list {
+    margin: 0 -20px -100px;
+  }
+  .listing__event-card {
+    width: calc(33.3333% - 40px);
+    margin: 0 20px 100px;
+  }
   .page-header {
     height: 111px;
   }
@@ -1642,9 +1630,34 @@ textarea:focus::placeholder {
   }
 }
 @media (max-width: 1339px) {
+  .event-card__title {
+    min-height: 54px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .section-title {
+    min-height: 52px;
+    margin-bottom: 100px;
+    padding: 11px 40px;
+    font-size: 24px;
+  }
+  .listing__events-list {
+    margin: 0 -15px -100px;
+  }
+  .listing__event-card {
+    width: calc(33.3333% - 30px);
+    margin: 0 15px 100px;
+  }
+  .events {
+    padding: 90px 0 100px;
+  }
   .article__container {
     padding-left: 30px;
     padding-right: 30px;
+  }
+  .reserve {
+    gap: 65px 6.5%;
+    grid-template-columns: 340px calc(93.5% - 340px);
   }
   .page-header__container {
     padding-left: 30px;
@@ -1659,6 +1672,26 @@ textarea:focus::placeholder {
   }
 }
 @media (max-width: 1019px) {
+  .event-card__description {
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .listing__events-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 -15px -80px;
+  }
+  .listing__event-card {
+    width: calc(50% - 30px);
+    max-width: 405px;
+    margin: 0 15px 80px;
+  }
+  .reserve {
+    gap: 60px;
+    grid-template-columns: auto 390px;
+    grid-template-areas: "scheme scheme" "checks legend" "checks order";
+  }
   .page-header__nav {
     position: absolute;
     left: 0;
@@ -1745,9 +1778,33 @@ textarea:focus::placeholder {
   body {
     padding-top: 70px;
   }
+  .event-card__title {
+    min-height: 44px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .section-title {
+    min-height: 42px;
+    margin-bottom: 80px;
+    padding: 11px 20px;
+    font-size: 20px;
+  }
+  .listing__events-list {
+    margin: 0 -10px -80px;
+  }
+  .listing__event-card {
+    margin: 0 10px 80px;
+  }
+  .events {
+    padding: 80px 0 100px;
+  }
   .article__container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .reserve {
+    grid-template-columns: 100%;
+    grid-template-areas: "scheme" "legend" "checks" "order";
   }
   .page-header {
     height: 70px;
@@ -1769,5 +1826,19 @@ textarea:focus::placeholder {
   .page-header__container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+@media (max-width: 649px) {
+  .listing__events-list {
+    margin: 0 0 -60px;
+  }
+  .listing__event-card {
+    width: 100%;
+    margin: 0 0 60px;
+  }
+}
+@media (max-width: 599px) {
+  .section-title {
+    font-size: 16px;
   }
 }
