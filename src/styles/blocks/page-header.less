@@ -13,6 +13,7 @@
   justify-content: space-between;
   z-index: 100;
 
+  // десктоп-стили
   @media @bw1660 {
     height: 111px;
   }
@@ -51,6 +52,8 @@
     text-decoration: none;
     z-index: 1;
     //прочие стили
+
+    // десктоп-стили
     @media @bw1660 {
       width: 152px;
       height: 111px;
@@ -60,10 +63,13 @@
       height: 70px;
     }
   }
+
   &__logo-icon {
     width: 100%;
     height: 100%;
   }
+
+  // мобильное навигационное меню
   &__nav {
     box-sizing: border-box;
     display: flex;
@@ -146,6 +152,7 @@
     align-items: center;
     width: 202px;
     z-index: 1;
+    //border: 1px solid red;
 
     //прочие стили
     @media @bw1660 {
@@ -184,6 +191,7 @@
       background: none;
       color: @black;
       font-size: 0;
+      //border: 1px solid red;
     }
     &:hover {
       background-color: @black;
