@@ -52,6 +52,45 @@
 
 
   <main class="main">
+    <div class="about"><!---------------------------------- Листинг статей блога ---------------------------------->
+      <section class="listing @@class">
+        <h2 class="listing__title section-title">О нас</h2>
+        <!-- prettier-ignore -->
+        <div class="about">
+          <div class="about__title">
+            <h2>Проект «Millennials»</h2>
+          </div>
+          <div class="about__discription">
+            <p>
+              Вдохновлен молодыми идейными людьми, увлеченными творчеством, эмоциями и
+              желанием сделать мир лучше, проявить себя. У них есть талант и
+              стремление, у нас возможность помочь им воплотить их мечту в реальность.
+            </p>
+          </div>
+          <div class="about__picture">
+            <picture class="about__pic-left">
+              <img src="/dist/assets/images/about/pic_nirvana.jpg" width="870" height="100" alt="">
+            </picture>
+            <picture class="about__pic-right">
+              <img src="/dist/assets/images/about/pic_nirvana.jpg" width="404" height="100" alt="">
+            </picture>
+          </div>
+          <div class="about__title">
+            <h2>Мы предоставляем площади для
+              <br /> вашего мероприятия
+            </h2>
+          </div>
+          <div class="about__discription">
+            <p>
+              И оказываем помощь с организацией, если вам это нужно.
+              <br />
+              Наша цель: вовлечь в культурную жизнь города как можно больше людей, помочь молодым ребятам сделать первые шаги к своей мечте и рассказать всем о том, что их волнует.
+            </p>
+          </div>
+
+        </div>
+      </section>
+    </div>
     <!---------------------------------- Листинг мероприятия ---------------------------------->
     <section class="listing events__listing">
       <h2 class="listing__title section-title">Мероприятия</h2>
@@ -101,6 +140,7 @@
     <!---------------------------------- Листинг мероприятия ---------------------------------->
 
 
+
     <div class="home">
       <!-- прочая разметка -->
       <!-- prettier-ignore -->
@@ -112,20 +152,6 @@
           <article class="article-card listing__article-card">
             <a href="#" class="article-card__link">
               <picture class="article-card__picture">
-                <!-- <source
-        media="(max-width: 450px)"
-        type="image/webp"
-        srcset="assets/images/blog/theatre.webp"
-      />
-      <source media="(max-width: 450px)" srcset="assets/images/blog/theatre.jpg" />
-      <source
-        media="(max-width: 1169px)"
-        type="image/webp"
-        srcset="assets/images/blog/theatre_tablet.webp"
-      />
-      <source media="(max-width: 1169px)" srcset="assets/images/blog/theatre_tablet.jpg" />
-      <source type="image/webp" srcset="assets/images/blog/theatre.webp" /> -->
-
                 <img src="assets/images/blog/theatre.jpg" alt="Theatre Photosession" class="article-card__img" />
               </picture>
             </a>
@@ -145,20 +171,6 @@
           <article class="article-card listing__article-card">
             <a href="#" class="article-card__link">
               <picture class="article-card__picture">
-                <!-- <source
-        media="(max-width: 450px)"
-        type="image/webp"
-        srcset="assets/images/blog/exhibition_vr.webp"
-      />
-      <source media="(max-width: 450px)" srcset="assets/images/blog/exhibition_vr.jpg" />
-      <source
-        media="(max-width: 1169px)"
-        type="image/webp"
-        srcset="assets/images/blog/exhibition_vr_tablet.webp"
-      />
-      <source media="(max-width: 1169px)" srcset="assets/images/blog/exhibition_vr_tablet.jpg" />
-      <source type="image/webp" srcset="assets/images/blog/exhibition_vr.webp" /> -->
-
                 <img src="assets/images/blog/exhibition_vr.jpg" alt="VR exhibition in Tomsk" class="article-card__img" />
               </picture>
             </a>
@@ -178,20 +190,6 @@
           <article class="article-card listing__article-card">
             <a href="#" class="article-card__link">
               <picture class="article-card__picture">
-                <!-- <source
-        media="(max-width: 450px)"
-        type="image/webp"
-        srcset="assets/images/blog/rocking_radio.webp"
-      />
-      <source media="(max-width: 450px)" srcset="assets/images/blog/rocking_radio.jpg" />
-      <source
-        media="(max-width: 1169px)"
-        type="image/webp"
-        srcset="assets/images/blog/rocking_radio_tablet.webp"
-      />
-      <source media="(max-width: 1169px)" srcset="assets/images/blog/rocking_radio_tablet.jpg" />
-      <source type="image/webp" srcset="assets/images/blog/rocking_radio.webp" /> -->
-
                 <img src="assets/images/blog/rocking_radio.jpg" alt="Rocking radio in an abandoned hangar" class="article-card__img" />
               </picture>
             </a>
@@ -221,7 +219,17 @@
   </main>
 
   <!---------------------------------- FOOTER ---------------------------------->
-  <footer class="page-footer">FOOTER</footer>
+  <footer class="page-footer container">
+    <div class="page-footer__menu">
+      <a href="#" class="page-footer__menu__link">Календарь мероприятий</a>
+      <a href="#" class="page-footer__menu__link">Провести мероприятие</a>
+      <a href="#" class="page-footer__menu__link">Стать арендатором</a>
+      <a href="#" class="page-footer__menu__link">Наши проекты</a>
+      <a href="#" class="page-footer__menu__link">Контакты</a>
+    </div>
+    <p>© Millennials 2022</p>
+    <h3>Политика конфиденциальности &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Cookies</h3>
+  </footer>
   <!---------------------------------- FOOTER ---------------------------------->
 
   <!-- Попап с формой заявки меропрития -->
