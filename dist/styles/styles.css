@@ -1610,14 +1610,76 @@ textarea:focus::placeholder {
 /*Стили, кнопка войти конец*/
 /*---------------------------------------------------РАЗДЕЛИТЕЛЬНАЯ ЧЕРТА---------------------------------------------------*/
 /*Стили footer начало*/
-.page-footer {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-  background-color: #bebaba;
-  height: 400px;
+/*Стили footer конец*/
+/*---------------------------------------------------РАЗДЕЛИТЕЛЬНАЯ ЧЕРТА---------------------------------------------------*/
+.page-footer .page-footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
 }
-.page-footer__menu {
+.page-footer .page-footer__container .left-container,
+.page-footer .page-footer__container .right-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.page-footer .page-footer__container .right-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-item-align: space-between;
+      align-self: space-between;
+}
+.page-footer .page-footer__container .left,
+.page-footer .page-footer__container .right {
+  background-color: #f0f0f0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.page-footer .page-footer__container .center {
+  background-color: #c0c0c0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.page-footer .page-footer__container .center__soceal-media svg {
+  margin: 0 44px;
+}
+.page-footer .page-footer__container .menu {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: -webkit-box;
@@ -1627,7 +1689,7 @@ textarea:focus::placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 300px;
+  width: 500px;
   color: #1f1e1e;
   font-weight: 600;
   font-size: 18px;
@@ -1635,43 +1697,17 @@ textarea:focus::placeholder {
   text-decoration: none;
   border-left: 5px solid #bc3324;
 }
-.page-footer__menu__link {
+.page-footer .page-footer__container .menu__link {
   text-decoration: none;
   margin: 0 0 22px 26px;
 }
-.page-footer__menu__link:last-child {
+.page-footer .page-footer__container .menu__link:last-child {
   margin-bottom: 0;
 }
-.page-footer__menu__link:hover {
+.page-footer .page-footer__container .menu__link:hover {
   color: #a51505;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
-}
-.page-footer p {
-  margin-top: 60px;
-}
-/*Стили footer конец*/
-/*---------------------------------------------------РАЗДЕЛИТЕЛЬНАЯ ЧЕРТА---------------------------------------------------*/
-__nav-link {
-  color: #1f1e1e;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 25px;
-  text-decoration: none;
-  -webkit-transition: color 0.2s;
-  transition: color 0.2s;
-}
-__nav-link:hover {
-  color: #bc3324;
-}
-__nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  margin: 0 auto;
 }
 .width_624 {
   -webkit-box-sizing: border-box;
