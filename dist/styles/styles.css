@@ -1609,24 +1609,26 @@ textarea:focus::placeholder {
 }
 /*Стили, кнопка войти конец*/
 /*---------------------------------------------------РАЗДЕЛИТЕЛЬНАЯ ЧЕРТА---------------------------------------------------*/
-/*Стили footer начало*/
-/*Стили footer конец*/
-/*---------------------------------------------------РАЗДЕЛИТЕЛЬНАЯ ЧЕРТА---------------------------------------------------*/
-.page-footer .page-footer__container {
+.page-footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+.page-footer__container {
+  padding: 20px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.page-footer__container__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
+  margin: 10px 0;
 }
-.page-footer .page-footer__container .left-container,
-.page-footer .page-footer__container .right-container {
+.page-footer__container__box__item__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1634,81 +1636,29 @@ textarea:focus::placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.page-footer .page-footer__container .right-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  -ms-flex-item-align: space-between;
-      align-self: space-between;
-}
-.page-footer .page-footer__container .left,
-.page-footer .page-footer__container .right {
-  background-color: #f0f0f0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-.page-footer .page-footer__container .center {
-  background-color: #c0c0c0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-.page-footer .page-footer__container .center__soceal-media svg {
-  margin: 0 44px;
-}
-.page-footer .page-footer__container .menu {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 500px;
-  color: #1f1e1e;
   font-weight: 600;
   font-size: 18px;
   line-height: 25px;
-  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
   border-left: 5px solid #bc3324;
 }
-.page-footer .page-footer__container .menu__link {
+.page-footer__container__box__item__menu a {
+  margin: 0 0 0 10px;
+  padding: 5px 0;
   text-decoration: none;
-  margin: 0 0 22px 26px;
+  color: #1f1e1e;
 }
-.page-footer .page-footer__container .menu__link:last-child {
-  margin-bottom: 0;
-}
-.page-footer .page-footer__container .menu__link:hover {
+.page-footer__container__box__item__menu a:hover {
+  text-decoration: none;
   color: #a51505;
-  -webkit-transition: color 0.2s;
-  transition: color 0.2s;
 }
+.page-footer .item3,
+.page-footer .item4,
+.page-footer .item5 {
+  -ms-flex-line-pack: end;
+      align-content: flex-end;
+}
+/*---------------------------------------------------РАЗДЕЛИТЕЛЬНАЯ ЧЕРТА---------------------------------------------------*/
 .width_624 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
