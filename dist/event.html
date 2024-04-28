@@ -182,12 +182,21 @@
         </div>
         <div class="page-footer__container__box__item item2">
           <h3>Подпишись и будь в курсе происходящего</h3>
-          <input type="email" placeholder="Email" />
-          <button>Подписаться</button>
-          <br />
-          <input type="checkbox" checked />
-          <span>
-            Согласен на обработку персональных данных</span>
+          <form action="">
+            <div class="page-footer__subscribe">
+              <input class="page-footer__subscribe__input" type="email" placeholder="Email" name="email" required />
+              <button type="submit" class="page-footer__subscribe__input__btnf">
+                Подписаться
+              </button>
+            </div>
+            <label class="form__check check">
+              <input type="checkbox" name="agree" class="check__input" required checked />
+              <span class="check__mark"></span>
+              <span class="check__label check__label--s">
+                Согласен на обработку персональных данных
+              </span>
+            </label>
+          </form>
         </div>
       </div>
       <div class="page-footer__container__box">
@@ -196,12 +205,16 @@
           <h3>Политика конфиденциальности Cookies</h3>
         </div>
         <div class="page-footer__container__box__item item4">
-          <svg class="page-header__nav-logout-icon" width="58" height="58">
-            <use xlink:href="assets/icons/symbols.svg#insta"></use>
-          </svg>
-          <svg class="page-header__nav-logout-icon" width="58" height="58">
-            <use xlink:href="assets/icons/symbols.svg#vk"></use>
-          </svg>
+          <a href="#">
+            <svg class="page-footer__insta" width="58" height="58">
+              <use xlink:href="assets/icons/symbols.svg#insta"></use>
+            </svg>
+          </a>
+          <a href="#">
+            <svg class="page-footer__insta__vk" width="58" height="58">
+              <use xlink:href="assets/icons/symbols.svg#vk"></use>
+            </svg>
+          </a>
         </div>
         <div class="page-footer__container__box__item item5">
           <h3>Создание и продвижение TAGREE</h3>

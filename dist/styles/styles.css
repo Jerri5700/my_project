@@ -1609,17 +1609,22 @@ textarea:focus::placeholder {
 }
 /*Стили, кнопка войти конец*/
 /*---------------------------------------------------РАЗДЕЛИТЕЛЬНАЯ ЧЕРТА---------------------------------------------------*/
+/***Стили footer сайта***/
 .page-footer {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .page-footer__container {
+  /***Стили основного контейнера, меню, авторское право, подписаться, разработчик***/
   padding: 20px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 .page-footer__container__box {
+  /***Стили двух блоков, верх и низ***/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1629,6 +1634,7 @@ textarea:focus::placeholder {
   margin: 10px 0;
 }
 .page-footer__container__box__item__menu {
+  /***Стили низ, лево меню***/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1657,6 +1663,32 @@ textarea:focus::placeholder {
 .page-footer .item5 {
   -ms-flex-line-pack: end;
       align-content: flex-end;
+}
+.page-footer__subscribe {
+  /***Стили подписаться***/
+}
+.page-footer__subscribe__input {
+  width: 310px;
+  height: 49px;
+  border: none;
+}
+.page-footer__subscribe__input__btnf {
+  width: 135px;
+  height: 52px;
+  margin-bottom: 15px;
+  background-color: #1f1e1e;
+  color: #ffffff;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  border: none;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+.page-footer__subscribe__input__btnf:hover {
+  background-color: #bc3324;
+}
+.page-footer__insta {
+  margin-right: 44px;
 }
 /*---------------------------------------------------РАЗДЕЛИТЕЛЬНАЯ ЧЕРТА---------------------------------------------------*/
 .width_624 {

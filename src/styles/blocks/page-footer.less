@@ -1,27 +1,28 @@
-//Стили footer сайта
+/***Стили footer сайта***/
 .page-footer {
   flex: 0 0 auto;
-  //background-color: rgb(190, 186, 186);
+  //background-color: darkgrey;
+  box-sizing: border-box;
   //height: 400px;
   &__container {
-    //min-height: 100vh;
-    //width: auto;
+    /***Стили основного контейнера, меню, авторское право, подписаться, разработчик***/
     //max-width: 90%;
     //margin: 0 auto;
     padding: 20px 0;
     box-sizing: border-box;
     //background-color: #c6fffe;
     &__box {
+      /***Стили двух блоков, верх и низ***/
       display: flex;
       justify-content: space-between;
       margin: 10px 0;
+      //border: 1px solid red;
       //padding: 0 5px;
-      //align-self: flex-end;
-      // align-content: flex-end;
       &__item {
         //background: gray;
         //height: 180px;
         &__menu {
+          /***Стили низ, лево меню***/
           display: flex;
           flex-direction: column;
           font-weight: 600;
@@ -47,6 +48,31 @@
   .item4,
   .item5 {
     align-content: flex-end;
+  }
+  &__subscribe {
+    /***Стили подписаться***/
+    &__input {
+      width: 310px;
+      height: 49px;
+      border: none;
+      &__btnf {
+        width: 135px;
+        height: 52px;
+        margin-bottom: 15px;
+        background-color: @black;
+        color: @white;
+        font-size: 14px;
+        font-family: @font1;
+        border: none;
+        transition: background-color 0.2s;
+        &:hover {
+          background-color: @red;
+        }
+      }
+    }
+  }
+  &__insta {
+    margin-right: 44px;
   }
 }
 /*---------------------------------------------------РАЗДЕЛИТЕЛЬНАЯ ЧЕРТА---------------------------------------------------*/
