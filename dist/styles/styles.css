@@ -1290,6 +1290,49 @@ textarea:focus::placeholder {
   border: none;
   color: #ffffff;
 }
+.contacts__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid red;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.block1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /* Элементы переносятся на новую строку при заполнении текущей строки */
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-preferred-size: 400px;
+      flex-basis: 400px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.block1 > div {
+  width: calc(50%);
+  /* По два элемента в каждом столбце с отступом между ними */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid gray;
+}
+.block2 {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid green;
+  margin-left: auto;
+}
 .about {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
