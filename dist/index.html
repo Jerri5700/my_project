@@ -1,6 +1,7 @@
+<!---------------------------------- ГЛАВНАЯ СТРАНИЦА САЙТА  ---------------------------------->
 <!DOCTYPE html>
 <html lang="ru">
-<!---------------------------------- HEAD ---------------------------------->
+<!---------------------------------- БЛОК HEAD ---------------------------------->
 
 <head>
   <meta charset="UTF-8" />
@@ -11,11 +12,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
-<!---------------------------------- HEAD ---------------------------------->
 
 
 <body class="body">
-  <!------------ Шапка сайта, горизонтальное меню, логотип, кнопка входа ------------>
+  <!------------ БЛОК шапка сайта, горизонтальное меню, логотип, кнопка входа ------------>
   <header class="page-header">
     <div class="page-header__container">
       <a href="index.html" class="page-header__logo">
@@ -52,30 +52,29 @@
 
 
   <main class="main">
-    <div class="header-art"><!---------------------------------- АРТ - ПРОСТРАНСТВО  ---------------------------------->
+    <div class="header-art"><!---------------------------------- БЛОК АРТ - ПРОСТРАНСТВО  ---------------------------------->
       <section class="">
-        <!-- <h2 class="listing__title section-title">О нас</h2> -->
+        <!-- <h2 class="listing__title section-title">АРТ — ПРОСТРАНСТВО</h2> -->
         <!-- prettier-ignore -->
         <div class="header-art">
-          <div class="art">
+          <div class="header-art__art">
             арт — пространство
           </div>
-          <div class="lenni">
+          <div class="header-art__lenni">
             <picture>
               <svg class="" width="1920" height="325">
                 <use xlink:href="assets/icons/symbols.svg#lenni"></use>
               </svg>
             </picture>
           </div>
-          <div class="people1">
+          <div class="header-art__people">
             для людей, горящих сердцем и делом
             <br>место для настоящего
           </div>
-          <!-- <div class="people2">место для настоящего</div> -->
         </div>
       </section>
     </div>
-    <div class="tenant-card"><!---------------------------------- Я хочу провести мероприятие или стать арендатором  ---------------------------------->
+    <div class="tenant-card"><!---------------------------------- БЛОК Я хочу провести мероприятие или стать арендатором  ---------------------------------->
       <section class="listing @@class">
         <!-- <h2 class="listing__title section-title">О нас</h2> -->
         <!-- prettier-ignore -->
@@ -99,7 +98,7 @@
         </div>
       </section>
     </div>
-    <div class="about"><!---------------------------------- Листинг статей блога ---------------------------------->
+    <div class="about"><!---------------------------------- БЛОК ЛИСТИНГ СТАТЕЙ БЛОГА ---------------------------------->
       <section class="listing @@class">
         <h2 class="listing__title section-title">О нас</h2>
         <!-- prettier-ignore -->
@@ -134,16 +133,15 @@
               Наша цель: вовлечь в культурную жизнь города как можно больше людей, помочь молодым ребятам сделать первые шаги к своей мечте и рассказать всем о том, что их волнует.
             </p>
           </div>
-
         </div>
       </section>
     </div>
-    <!---------------------------------- Листинг мероприятия ---------------------------------->
+    <!---------------------------------- СТРАНИЦА ЛИСТИНГ МЕРОПРИЯТИЙ ---------------------------------->
     <section class="listing events__listing">
       <h2 class="listing__title section-title">Мероприятия</h2>
       <div class="listing__events-list">
         <!-- prettier-ignore -->
-        <!---------------------------------- Карточка мероприятия ---------------------------------->
+        <!---------------------------------- БЛОК КАРТОЧКА МЕРОПРИЯТИЯ ---------------------------------->
         <article class="event-card listing__event-card">
           <a href="#" class="event-card__link">
             <picture class="event-card__picture">
@@ -154,8 +152,7 @@
             <time datetime="2022-12-07T18:00" class="event-card__time">07.12.2022 | начало 18.00</time>
           </a>
         </article>
-        <!---------------------------------- Карточка мероприятия ---------------------------------->
-        <!---------------------------------- Карточка мероприятия ---------------------------------->
+        <!---------------------------------- БЛОК КАРТОЧКА МЕРОПРИЯТИЯ ---------------------------------->
         <article class="event-card listing__event-card">
           <a href="#" class="event-card__link">
             <picture class="event-card__picture">
@@ -166,8 +163,7 @@
             <time datetime="2022-12-14T18:30" class="event-card__time">14.12.2022 | начало 18.30</time>
           </a>
         </article>
-        <!---------------------------------- Карточка мероприятия ---------------------------------->
-        <!---------------------------------- Карточка мероприятия ---------------------------------->
+        <!---------------------------------- БЛОК КАРТОЧКА МЕРОПРИЯТИЯ ---------------------------------->
         <article class="event-card listing__event-card">
           <a href="#" class="event-card__link">
             <picture class="event-card__picture">
@@ -178,7 +174,6 @@
             <time datetime="2022-12-16T20:00" class="event-card__time">16.12.2022 | начало 20.00</time>
           </a>
         </article>
-        <!---------------------------------- Карточка мероприятия ---------------------------------->
 
       </div>
       <!-- Кнопка "Показать все" -->
@@ -191,11 +186,12 @@
     <div class="home">
       <!-- прочая разметка -->
       <!-- prettier-ignore -->
-      <!---------------------------------- Листинг статей блога ---------------------------------->
+      <!---------------------------------- БЛОК ЛИСТИНГ СТАТЕЙ БЛОГА ---------------------------------->
       <section class="listing home__listing">
         <h2 class="listing__title section-title">Блог</h2>
         <div class="listing__article-list">
           <!-- prettier-ignore -->
+          <!---------------------------------- БЛОК ARTICLE-CARD  ---------------------------------->
           <article class="article-card listing__article-card">
             <a href="#" class="article-card__link">
               <picture class="article-card__picture">
@@ -215,6 +211,7 @@
               <p class="article-card__description">Организовывая фотосессию для локального бренда одежды мы смогли воплотить все пожелания заказчика и у нас получилась отличная работа. Смотрите как это было</p>
             </div>
           </article>
+          <!---------------------------------- БЛОК ARTICLE-CARD  ---------------------------------->
           <article class="article-card listing__article-card">
             <a href="#" class="article-card__link">
               <picture class="article-card__picture">
@@ -234,6 +231,7 @@
               <p class="article-card__description">Клуб виртуальной реальности - это другие миры. яркие эмоции. новый опыт. ... Мы представляем нашим клиентам лучший игровом VR-опыт в Томске.</p>
             </div>
           </article>
+          <!---------------------------------- БЛОК ARTICLE-CARD  ---------------------------------->
           <article class="article-card listing__article-card">
             <a href="#" class="article-card__link">
               <picture class="article-card__picture">
@@ -257,13 +255,12 @@
         </div>
         <a href="#" class="link">Смотреть все</a>
       </section>
-      <!---------------------------------- Листинг статей блога ---------------------------------->
 
 
 
       <!-- прочая разметка -->
     </div>
-    <div class="contacts"><!---------------------------------- Контакты ---------------------------------->
+    <div class="contacts"><!---------------------------------- БЛОК КОНТАКТЫ---------------------------------->
       <section class="listing @@class">
         <h2 class="listing__title section-title">Контакты</h2>
         <!-- prettier-ignore -->
@@ -325,7 +322,7 @@
         </div>
       </section>
     </div>
-    <div class="text-quote"><!---------------------------------- Цитата текста ---------------------------------->
+    <div class="text-quote"><!---------------------------------- БЛОК ЦАТАТА ТЕКСТА ---------------------------------->
       <section class="text-quote">
         <!-- <h2 class="listing__title section-title">Цитаты</h2> -->
         <!-- prettier-ignore -->
@@ -340,7 +337,7 @@
     </div>
   </main>
 
-  <!------------------------------------------------------- FOOTER ------------------------------------------------------->
+  <!------------------------------------------------------- БЛОК FOOTER САЙТА ------------------------------------------------------->
   <footer class="page-footer container">
     <div class="page-footer__container">
       <div class="page-footer__container__box">
@@ -399,6 +396,7 @@
   <!-- ---------------------------------------------------РАЗДЕЛИТЕЛЬНАЯ ЧЕРТА--------------------------------------------------- -->
 
   <!-- Попап с формой заявки меропрития -->
+  <!---------------------------------- БЛОК ФОРМА ПОДОБРАТЬ ПЛОЩАДКУ ---------------------------------->
   <div class="pp" id="eventPP">
     <div class="pp__wrapper">
       <div class="pp__sticky-close">
