@@ -2,29 +2,24 @@
 <!DOCTYPE html>
 <html lang="ru">
   @@include('blocks/head.html')
-
   <body class="body">
     @@include('blocks/page-header.html')
-
     <main class="main">
       <div class="header-art">@@include('blocks/header-art.html')</div>
       <div class="tenant-card">@@include('blocks/tenant-card.html')</div>
       <div class="about">@@include('blocks/about-card.html')</div>
       @@include('index_event-card.html')
-
       <!-- @@include('blocks/events.html') -->
       <div class="home">
         <!-- прочая разметка -->
         <!-- prettier-ignore -->
         @@include('blocks/blog-listing.html', {"class": "home__listing"},)
         <!-- @@include('blocks/blog-listing.html') -->
-
         <!-- прочая разметка -->
       </div>
       <div class="contacts">@@include('blocks/contacts-card.html')</div>
       <div class="text-quote">@@include('blocks/text-quote.html')</div>
     </main>
-
     @@include('blocks/page-footer.html')
     <!-- Попап с формой заявки меропрития -->
     @@include('blocks/event-pp.html')

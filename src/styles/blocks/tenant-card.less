@@ -1,29 +1,63 @@
 /***Стили блока Провести мероприятие или стать арендатором***/
 .tenant-card__container {
   max-width: 624px;
-  height: 128;
+  //height: 128;
   margin: 0 auto;
   padding: 20px 0;
+
   box-sizing: border-box;
-  background-color: #e6eeee;
+  //background-color: #e6eeee;
   margin-bottom: 200px;
+  text-decoration: none;
+  font-family: @font3;
+  font-size: 16px;
+  // flex-wrap: wrap;
+  font-weight: 600;
+  line-height: 22px;
+  .item2 {
+    padding-bottom: 42px;
+  }
   &__box {
     display: flex;
+
     margin-bottom: 10px;
-    &__item {
+    .link1 {
+      background-color: @red;
+      color: @white;
+      width: 272;
+      height: 52px;
+    }
+    .link2 {
+      background-color: @gray;
+      box-sizing: border-box;
+      border: 1px solid @black;
+      color: @black;
+      width: 245px;
+      height: 52px;
+      margin-left: auto;
+    }
+    &__item,
+    a {
       flex: 1 0 auto;
       align-content: center;
-      background: rgb(216, 212, 212);
-      width: 300px;
-      height: 50px;
       text-align: center;
-      margin: 0 5px;
-      font-size: 14px;
-      font-family: @font2;
-    }
-    a:hover {
-      color: @white;
+      //margin: 0 5px;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 22px;
+      font-family: @font1;
+      color: @black;
+      text-decoration: none;
     }
   }
+  span {
+    font-family: @font2;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 2%;
+    padding-left: 35px;
+  }
 }
+
 /*---------------------------------------------------РАЗДЕЛИТЕЛЬНАЯ ЧЕРТА---------------------------------------------------*/

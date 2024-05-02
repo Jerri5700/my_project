@@ -29,17 +29,17 @@
           font-weight: 600;
           font-size: 18px;
           line-height: 25px;
-          font-family: "Open Sans", sans-serif;
-          border-left: 5px solid #bc3324;
+          font-family: @font1;
+          border-left: 5px solid @red;
           a {
             margin: 0 0 0 10px;
             padding: 5px 0;
             text-decoration: none;
-            color: #1f1e1e;
+            color: @black;
           }
           a:hover {
             text-decoration: none;
-            color: #a51505;
+            color: @red_dark;
           }
         }
       }
@@ -67,7 +67,7 @@
         border: none;
         transition: background-color 0.2s;
         &:hover {
-          background-color: @red;
+          background-color: @red_dark;
         }
       }
     }

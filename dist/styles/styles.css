@@ -567,13 +567,19 @@ textarea:focus::placeholder {
 /***Стили блока Провести мероприятие или стать арендатором***/
 .tenant-card__container {
   max-width: 624px;
-  height: 128;
   margin: 0 auto;
   padding: 20px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #e6eeee;
   margin-bottom: 200px;
+  text-decoration: none;
+  font-family: "mak", serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+}
+.tenant-card__container .item2 {
+  padding-bottom: 42px;
 }
 .tenant-card__container__box {
   display: -webkit-box;
@@ -581,22 +587,44 @@ textarea:focus::placeholder {
   display: flex;
   margin-bottom: 10px;
 }
-.tenant-card__container__box__item {
+.tenant-card__container__box .link1 {
+  background-color: #bc3324;
+  color: #ffffff;
+  width: 272;
+  height: 52px;
+}
+.tenant-card__container__box .link2 {
+  background-color: #dedede;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #1f1e1e;
+  color: #1f1e1e;
+  width: 245px;
+  height: 52px;
+  margin-left: auto;
+}
+.tenant-card__container__box__item,
+.tenant-card__container__box a {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto;
   -ms-flex-line-pack: center;
       align-content: center;
-  background: #d8d4d4;
-  width: 300px;
-  height: 50px;
   text-align: center;
-  margin: 0 5px;
-  font-size: 14px;
-  font-family: "Lora", serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 22px;
+  font-family: "Open Sans", sans-serif;
+  color: #1f1e1e;
+  text-decoration: none;
 }
-.tenant-card__container__box a:hover {
-  color: #ffffff;
+.tenant-card__container span {
+  font-family: "Lora", serif;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 2%;
+  padding-left: 35px;
 }
 /*---------------------------------------------------РАЗДЕЛИТЕЛЬНАЯ ЧЕРТА---------------------------------------------------*/
 /***Стили цитата текста***/
@@ -1855,7 +1883,7 @@ textarea:focus::placeholder {
   transition: background-color 0.2s;
 }
 .page-footer__subscribe__input__btnf:hover {
-  background-color: #bc3324;
+  background-color: #a51505;
 }
 .page-footer__insta {
   margin-right: 44px;
