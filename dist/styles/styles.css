@@ -562,7 +562,7 @@ textarea:focus::placeholder {
   height: 100%;
 }
 .tenant-card__container {
-  width: 624px;
+  max-width: 624px;
   height: 128;
   margin: 0 auto;
   padding: 20px 0;
@@ -619,6 +619,65 @@ textarea:focus::placeholder {
   margin-left: 668px;
 }
 /*---------------------------------------------------РАЗДЕЛИТЕЛЬНАЯ ЧЕРТА---------------------------------------------------*/
+/*   body {
+        margin: 0;
+        padding: 0;
+        border: none;
+      }*/
+/*   div {
+        border: 1px solid red;
+        box-sizing: border-box;
+      }*/
+.header-art {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 965px;
+          flex: 1 0 965px;
+  color: #1f1e1e;
+  font-family: "Lora", serif;
+  font-size: 45px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+.art,
+.people1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+/*.people2 {
+      display: flex;
+        align-self: center;
+        background-color: #f0f0f0;
+    }*/
+.lenni {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.art {
+  margin-bottom: 44px;
+}
+.people1 {
+  margin: 91px 0 105px;
+}
 .event-card {
   display: -webkit-box;
   display: -ms-flexbox;
