@@ -1888,6 +1888,33 @@ textarea:focus::placeholder {
 .page-footer__insta {
   margin-right: 44px;
 }
+.page-footer .footer-border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 140px;
+  margin-bottom: 60px;
+}
+.page-footer .left {
+  width: 618px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 2px;
+  margin-right: 50px;
+  background: -webkit-gradient(linear, right top, left top, from(#1c1b1b), color-stop(82.85%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(270deg, #1c1b1b, rgba(255, 255, 255, 0) 82.85%);
+}
+.page-footer .right {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 618px;
+  height: 2px;
+  margin-left: 50px;
+  background: -webkit-gradient(linear, left top, right top, from(#1c1b1b), color-stop(82.85%, rgba(255, 255, 255, 0)));
+  background: linear-gradient(-270deg, #1c1b1b, rgba(255, 255, 255, 0) 82.85%);
+}
 /*---------------------------------------------------РАЗДЕЛИТЕЛЬНАЯ ЧЕРТА---------------------------------------------------*/
 .width_624 {
   -webkit-box-sizing: border-box;
