@@ -1,9 +1,11 @@
 <!---------------------------------- СТРАНИЦА ЛИСТИНГ МЕРОПРИЯТИЙ ---------------------------------->
 <section class="listing events__listing">
-  <h2 class="listing__title section-title">Мероприятия</h2>
-  <div class="listing__events-list">
-    <!-- prettier-ignore -->
-    @@loop('blocks/event-card.html', [
+  <div class="crooked__rectangle">
+    <h2 class="listing__title section-title">Мероприятия</h2>
+
+    <div class="listing__events-list">
+      <!-- prettier-ignore -->
+      @@loop('blocks/event-card.html', [
               {
                 "class": "listing__event-card",
                 "img": "assets/images/events/nirvana.jpg",
@@ -32,8 +34,10 @@
                 "datetime": "2022-12-16T20:00"
               }     
             ])
+    </div>
+    <div></div>
+    <!-- Кнопка "Показать все" -->
+    <a href="#" class="listing__link">Показать еще</a>
   </div>
-  <!-- Кнопка "Показать все" -->
-  <a href="#" class="listing__link">Показать еще</a>
 </section>
 <!---------------------------------- Листинг мероприятия ---------------------------------->
