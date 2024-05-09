@@ -593,6 +593,9 @@ textarea:focus::placeholder {
   width: 272;
   height: 52px;
 }
+.tenant-card__container__box .link1:hover {
+  background-color: #a51505;
+}
 .tenant-card__container__box .link2 {
   background-color: #dedede;
   -webkit-box-sizing: border-box;
@@ -602,6 +605,10 @@ textarea:focus::placeholder {
   width: 245px;
   height: 52px;
   margin-left: auto;
+}
+.tenant-card__container__box .link2:hover {
+  background-color: #1f1e1e;
+  color: #ffffff;
 }
 .tenant-card__container__box__item,
 .tenant-card__container__box a {
@@ -776,6 +783,40 @@ textarea:focus::placeholder {
   line-height: 19px;
 }
 /*---------------------------------------------------РАЗДЕЛИТЕЛЬНАЯ ЧЕРТА---------------------------------------------------*/
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 253px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.main-block {
+  -ms-flex-preferred-size: 401px;
+      flex-basis: 401px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.top {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.bottom {
+  text-align: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
 /***Стили для блока main начало***/
 /*Стили для листинга мероприятия НАЧАЛО*/
 .section-title {
@@ -1454,7 +1495,6 @@ textarea:focus::placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid red;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -1482,12 +1522,10 @@ textarea:focus::placeholder {
           align-items: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 1px solid gray;
 }
 .block2 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 1px solid green;
   margin-left: auto;
 }
 /*---------------------------------------------------РАЗДЕЛИТЕЛЬНАЯ ЧЕРТА---------------------------------------------------*/
@@ -1511,11 +1549,9 @@ textarea:focus::placeholder {
   margin-bottom: 50px;
 }
 .about__title {
-  border: 1px solid red;
   text-align: left;
 }
 .about__discription {
-  border: 1px solid red;
   width: 750px;
   margin-left: auto;
 }
@@ -1523,8 +1559,15 @@ textarea:focus::placeholder {
   border: 1px solid green;
 }
 .about__pic-right {
+  position: relative;
+  bottom: 0;
   border: 1px solid green;
   margin-left: 930px;
+}
+.about div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid red;
 }
 /*---------------------------------------------------РАЗДЕЛИТЕЛЬНАЯ ЧЕРТА---------------------------------------------------*/
 /***Стили блока шапки начало***/
