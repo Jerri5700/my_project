@@ -174,3 +174,57 @@
 
 /*Стили для листинга блог КОНЕЦ*/
 /*---------------------------------------------------РАЗДЕЛИТЕЛЬНАЯ ЧЕРТА---------------------------------------------------*/
+// Стили для меню слайд навигации
+.nav__menu {
+  display: flex;
+  flex-direction: column;
+  //flex: 0 1 525px;
+  width: 100%;
+  max-width: 523px;
+  box-sizing: border-box;
+  //border: 1px solid red;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+.slide__top {
+  display: flex;
+  //flex-direction: row;
+  justify-content: space-between;
+  height: 62px;
+  //flex: 0 1 525px;
+  //height: 390px;
+}
+.slide__top img {
+  box-sizing: border-box;
+  //background-color: @gray;
+}
+.left_click {
+  display: flex;
+  transform: rotate(180deg);
+}
+.center {
+  display: flex;
+  //flex-direction: row;
+  align-items: center;
+}
+.slide {
+  display: flex;
+  justify-content: space-between;
+  width: 15px;
+  height: 2px;
+  border-radius: 5px;
+  //background-color: #bfbfbf;
+  background-color: @gray_dark;
+  margin-right: 6px;
+}
+.slide-center {
+  background-color: @black;
+}
+.slide:last-child {
+  margin-right: 0;
+}
+.link_right {
+  display: block;
+  text-align: right;
+}
