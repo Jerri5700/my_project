@@ -8,9 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="styles/styles.css" />
   <title>Lenni Art</title>
+  <link rel="icon" type="image/x-icon" href="assets/icons/header/logo.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body class="body">
@@ -83,10 +85,10 @@
               </div>
             </div>
             <div class='tenant-card__container__box box2'>
-              <a href="#" class="">
+              <a href="event-pp.html" class="">
                 <div class="tenant-card__container__box__item link1">Провести мероприятие</div>
               </a>
-              <a href="#" class="">
+              <a href="event.html" class="">
                 <div class="tenant-card__container__box__item link2">Стать арендатором</div>
               </a>
             </div>
@@ -152,8 +154,10 @@
               <p class="more">Смотреть</p>
               <!-- <h4>Смотреть</h4> -->
               <a href="#">
-                <div>
-                  <img src="assets/images/about/link.png" />
+                <div class="arrow">
+                  <svg class="arrow__icon" width="92" height="62">
+                    <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+                  </svg>
                 </div>
               </a>
             </div>
@@ -208,8 +212,10 @@
         <div class="nav__menu">
           <div class="slide__top">
             <a href="#">
-              <div class="left_click">
-                <img src="assets/images/about/link.png" />
+              <div class="left_click arrow">
+                <svg class="arrow__icon" width="92" height="62">
+                  <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+                </svg>
               </div>
             </a>
             <div class="center">
@@ -220,8 +226,10 @@
               <div class="slide"></div>
             </div>
             <a href="#">
-              <div class="right_click">
-                <img src="assets/images/about/link.png" />
+              <div class="right_click arrow">
+                <svg class="arrow__icon" width="92" height="62">
+                  <use xlink:href="assets/icons/symbols.svg#arrow"></use>
+                </svg>
               </div>
             </a>
           </div>
@@ -245,12 +253,20 @@
           <!---------------------------------- БЛОК ARTICLE-CARD  ---------------------------------->
           <article class="article-card listing__article-card">
             <a href="#" class="article-card__link">
+              <!-- <picture class="article-card__picture">
+      <img src="assets/images/blog/theatre.jpg" alt="Theatre Photosession" class="article-card__img" />
+    </picture> -->
               <picture class="article-card__picture">
+                <source media="(max-width: 450px)" type="image/webp" srcset="assets/images/blog/theatre.webp" />
+                <source media="(max-width: 450px)" srcset="assets/images/blog/theatre.jpg" />
+                <source media="(max-width: 1169px)" type="image/webp" srcset="assets/images/blog/theatre_tablet.webp" />
+                <source media="(max-width: 1169px)" srcset="assets/images/blog/theatre_tablet.jpg" />
+                <source type="image/webp" srcset="assets/images/blog/theatre.webp" />
                 <img src="assets/images/blog/theatre.jpg" alt="Theatre Photosession" class="article-card__img" />
               </picture>
             </a>
             <div class="article-card__info">
-              <time datetime="2022-11-26T00:00" class="article-card__time">26.11.2022</time>
+              <time datetime="2021-11-26T00:00" class="article-card__time">26.11.2021</time>
               <a href="#" class="article-card__title-link">
                 <h4 class="article-card__title">Фотосессия в стенах Театра драмы</h4>
                 <div class="article-card__arrow arrow">
@@ -259,13 +275,21 @@
                   </svg>
                 </div>
               </a>
-              <p class="article-card__description">Организовывая фотосессию для локального бренда одежды мы смогли воплотить все пожелания заказчика и у нас получилась отличная работа. Смотрите как это было</p>
+              <p class="article-card__description">Организовывая фотосессию для локального бренда...</p>
             </div>
           </article>
           <!---------------------------------- БЛОК ARTICLE-CARD  ---------------------------------->
           <article class="article-card listing__article-card">
             <a href="#" class="article-card__link">
+              <!-- <picture class="article-card__picture">
+      <img src="assets/images/blog/exhibition_vr.jpg" alt="VR exhibition in Tomsk" class="article-card__img" />
+    </picture> -->
               <picture class="article-card__picture">
+                <source media="(max-width: 450px)" type="image/webp" srcset="assets/images/blog/exhibition_vr.webp" />
+                <source media="(max-width: 450px)" srcset="assets/images/blog/exhibition_vr.jpg" />
+                <source media="(max-width: 1169px)" type="image/webp" srcset="assets/images/blog/exhibition_vr_tablet.webp" />
+                <source media="(max-width: 1169px)" srcset="assets/images/blog/exhibition_vr_tablet.jpg" />
+                <source type="image/webp" srcset="assets/images/blog/exhibition_vr.webp" />
                 <img src="assets/images/blog/exhibition_vr.jpg" alt="VR exhibition in Tomsk" class="article-card__img" />
               </picture>
             </a>
@@ -285,7 +309,15 @@
           <!---------------------------------- БЛОК ARTICLE-CARD  ---------------------------------->
           <article class="article-card listing__article-card">
             <a href="#" class="article-card__link">
+              <!-- <picture class="article-card__picture">
+      <img src="assets/images/blog/rocking_radio.jpg" alt="Rocking radio in an abandoned hangar" class="article-card__img" />
+    </picture> -->
               <picture class="article-card__picture">
+                <source media="(max-width: 450px)" type="image/webp" srcset="assets/images/blog/rocking_radio.webp" />
+                <source media="(max-width: 450px)" srcset="assets/images/blog/rocking_radio.jpg" />
+                <source media="(max-width: 1169px)" type="image/webp" srcset="assets/images/blog/rocking_radio_tablet.webp" />
+                <source media="(max-width: 1169px)" srcset="assets/images/blog/rocking_radio_tablet.jpg" />
+                <source type="image/webp" srcset="assets/images/blog/rocking_radio.webp" />
                 <img src="assets/images/blog/rocking_radio.jpg" alt="Rocking radio in an abandoned hangar" class="article-card__img" />
               </picture>
             </a>
