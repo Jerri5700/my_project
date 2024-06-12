@@ -36,6 +36,15 @@
 
 .reserve__checks {
   grid-area: checks;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.reserve__check {
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .reserve__order {
